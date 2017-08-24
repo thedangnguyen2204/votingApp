@@ -3,8 +3,11 @@
   "version": "1.0.1",
   "author": "Fullstack.io",
   "scripts": {
+    "go": "open http://localhost:3000; npm run server",
+    "e2e": "nightwatch",
     "test": "./node_modules/.bin/concurrently -k 'npm run server' 'npm run e2e'",
     "start": "node server.js",
+    "server": "http-server . -p 3000"
   },
   "private": true,
   "dependencies": {
